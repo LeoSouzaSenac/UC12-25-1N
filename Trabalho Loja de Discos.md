@@ -22,39 +22,54 @@ O cliente pediu uma identidade **dark mode nativa** — não é "site claro com 
 
 | Nome | Hex | Uso |
 |---|---|---|
-| `fundo-base` | `#0F0D16` | fundo principal da página |
-| `fundo-elevado` | `#1B1826` | fundo de cards, seções alternadas, contraste sutil com o `fundo-base` |
-| `texto-principal` | `#F2EFFB` | texto principal — quase branco, levemente roxeado |
-| `texto-secundario` | `#9A90B3` | texto secundário |
-| `roxo-neon` | `#B026FF` | cor de destaque principal — botões, links, glow, detalhes gráficos |
-| `ciano-eletrico` | `#2DE2E6` | segunda cor de destaque — usar com moderação, tipo contraponto do roxo |
+| `fundo-base` | `#15130F` | fundo principal da página |
+| `fundo-elevado` | `#1E1A13` | fundo de cards, seções alternadas, contraste sutil com o `fundo-base` |
+| `texto-principal` | `#F2EFE6` | texto principal — quase branco, levemente amarelado |
+| `texto-secundario` | `#B4AC98` | texto secundário |
+| `amarelo-selo` | `#F2C11A` | cor de destaque principal — botões, links, detalhes gráficos |
+| `vermelho-selo` | `#FF5A45` | segunda cor de destaque — usar com moderação, tipo contraponto do amarelo |
 
-Reparem que é uma paleta **escura de propósito**, não é "tema claro invertido". O roxo neon entra como cor de assinatura forte (quase uma cor de marca, tipo Twitch ou um clube eletrônico), e o ciano elétrico é usado com parcimônia pra não competir com o roxo — se as duas cores neon aparecerem com o mesmo peso na página, nenhuma das duas se destaca. É uma paleta bem diferente da Grão (terrosa, clara) — o objetivo é forçar vocês a pensar contraste em fundo escuro, que é um problema de design diferente de pensar contraste em fundo claro.
+Reparem que é uma paleta **escura de propósito**, não é "tema claro invertido". O amarelo entra como cor de assinatura forte (quase uma cor de marca), e o vermelho é usado com parcimônia pra não competir com ele — se as duas cores de destaque aparecerem com o mesmo peso na página, nenhuma das duas se destaca.
 
-> **Atenção especial em fundo escuro:** cor neon em tela escura é fácil demais de exagerar (todo mundo já viu site "neon" que cansa a vista em 10 segundos). Usem o roxo neon em elementos pontuais — botão, borda, ícone, um brilho sutil (`box-shadow`/`drop-shadow` bem discreto) — nunca como fundo de blocos grandes de texto.
+> **Atenção especial em fundo escuro:** cor de destaque saturada em tela escura é fácil demais de exagerar. Usem o amarelo em elementos pontuais — botão, borda, ícone, um detalhe gráfico — nunca como fundo de blocos grandes de texto corrido (texto amarelo em bloco longo cansa a leitura em fundo escuro).
 
 #### Tipografia
 
-- **Título (`font-display`):** uma fonte **geométrica e moderna**, com peso forte — remete a identidade de festival, app de streaming, marca de tecnologia. Sugestão no Google Fonts: `Space Grotesk` ou `Syne`.
-- **Texto corrido (`font-body`):** uma fonte sem serifa neutra e com boa legibilidade em fundo escuro (evitem fontes muito finas — em `#0F0D16` texto fininho e claro cansa a leitura). Sugestão: `Inter` ou `Manrope`.
+Não tem uma dupla de fontes obrigatória dessa vez — as referências lá embaixo mostram combinações bem diferentes (uma serifada robusta, uma condensada tipo cartaz, uma geométrica moderna) e todas funcionam com essa paleta. O que importa:
 
-> Podem trocar a sugestão de fonte por outra equivalente, desde que mantenha o espírito geométrico/moderno no título. O que **não pode** é usar a mesma dupla Fraunces + Work Sans da Grão.
+- **Título (`font-display`):** uma fonte com **personalidade e peso forte** — nada neutro demais. Pode ser condensada tipo cartaz de show, serifada robusta tipo slab, ou geométrica moderna. Sugestões no Google Fonts: `Anton`, `Big Shoulders Display`, `Zilla Slab`, `Archivo Black`.
+- **Texto corrido (`font-body`):** uma fonte sem serifa neutra, com boa legibilidade em fundo escuro (evitem fontes muito finas). Sugestões: `Sora`, `Public Sans`, `Archivo`, `Manrope`.
+
+> O que **não pode** é usar a mesma dupla Fraunces + Work Sans da Grão.
 
 #### Elemento de assinatura
 
-1 - Para o logo, use a imagem que melhor se encaixar com o seu design.
+1 - Para o logo, usem o arquivo `selo-logo.png` fornecido (está junto com este enunciado).
+**Logo Selo**
+![Logo Selo](selo_logo.png)
 
-2 - Toda loja de disco genérica usa ícone de vinil clichê (o círculo com o buraquinho no meio, batido demais). 
-O desafio de vocês: criar **um elemento gráfico de assinatura próprio** (não é o logo, é um elemento decorativo pro site, tipo o círculo que fizemos no site da Grão), em SVG puro, que não seja isso.
-Pode ser um traço, uma forma geométrica repetida, um padrão de "ranhuras" abstrato — qualquer coisa que 
-dê personalidade à seção Hero sem cair no óbvio. Como fazer isso? Pesquise ué.
+2 - Toda loja de disco genérica usa ícone de vinil clichê (o círculo com o buraquinho no meio, batido demais). O desafio de vocês: criar **um elemento gráfico de assinatura próprio** (não é o logo, é um elemento decorativo pro site, tipo o círculo que fizemos no site da Grão), em SVG puro, que não seja isso. Pode ser um traço, uma forma geométrica repetida, um padrão de "ranhuras" abstrato — qualquer coisa que dê personalidade à seção Hero sem cair no óbvio. Como fazer isso? Pesquise ué.
+
+#### Referências que o cliente aprovou
+
+O cliente viu três direções de mockup e gostou das três — não conseguiu decidir qual delas quer, então disse "façam algo parecido com uma dessas, mas não precisa ser igual". Ou seja: **usem como ponto de partida, não como gabarito pra copiar pixel a pixel**. Podem misturar ideias das três, pender mais pra uma, ou levar pra uma direção própria — desde que mantenham a paleta de cores e o espírito gráfico/direto da marca.
+
+**Referência 1**
+![Referência 1](selo-landing-page.png)
+
+**Referência 2** 
+![Referência 2](selo-landing-page-dark.png)
+
+**Referência 3**
+![Referência 3](selo-landing-page-dark-2.png)
+
 ---
 
 ## O que o site precisa ter
 
 Estrutura mínima obrigatória (podem adicionar mais se quiserem, mas isso aqui é o piso):
 
-1. **Header** — logo (texto estilizado, não precisa ser imagem) + menu de navegação fixo no topo
+1. **Header** — logo (a imagem fornecida) + menu de navegação fixo no topo
 2. **Hero** — nome da loja, frase de efeito curta, botão de call-to-action, elemento de assinatura em SVG
 3. **Seção "Sobre"** — texto contando a história da loja + espaço de imagem (placeholder)
 4. **Seção "Catálogo em destaque"** — grade de cards, cada um com: capa do disco (placeholder), nome do álbum, artista, preço
@@ -88,6 +103,7 @@ O cliente pediu pelo menos:
 
 1. O projeto completo (pasta zipada ou link de repositório)
 2. Você deve entregar nas discussões do GitHub.
+
 ---
 
 ## Dica final
