@@ -18,20 +18,38 @@ Usem tudo que vimos no material da cafeteria **Grão**: componentização, props
 
 #### Paleta de cores
 
-O cliente pediu uma identidade **dark mode nativa** — não é "site claro com botão de tema escuro", o fundo escuro *é* a identidade da marca, do jeito que uma balada ou um clube de DJ se apresenta.
+O cliente é **flexível quanto a fundo claro ou escuro** — ele viu as três referências lá embaixo e gostou tanto da mais clara (referência 1, linha "sebo/vinil de segunda mão") quanto das escuras (referências 2 e 3). O que **não é flexível** é a dupla de destaque amarelo/vermelho e o tom direto/gráfico da marca — isso tem que aparecer independente da base que vocês escolherem.
+
+Ou seja: escolham **uma** das duas bases abaixo (não precisa ser exatamente esses hex, mas o espírito tem que ser esse) e apliquem os destaques por cima.
+
+**Base clara** (tipo a referência 1 — papel envelhecido, mais "sebo de disco usado"):
+
+| Nome | Hex | Uso |
+|---|---|---|
+| `fundo-base` | `#EAE3D2` | fundo principal da página |
+| `fundo-elevado` | `#DDD2B7` | fundo de cards, seções alternadas |
+| `texto-principal` | `#201D18` | texto principal — quase preto |
+| `texto-secundario` | `#6B6354` | texto secundário |
+
+**Base escura** (tipo as referências 2 e 3 — dark mode nativo, mais "clube/cartaz de show"):
 
 | Nome | Hex | Uso |
 |---|---|---|
 | `fundo-base` | `#15130F` | fundo principal da página |
-| `fundo-elevado` | `#1E1A13` | fundo de cards, seções alternadas, contraste sutil com o `fundo-base` |
-| `texto-principal` | `#F2EFE6` | texto principal — quase branco, levemente amarelado |
+| `fundo-elevado` | `#1E1A13` | fundo de cards, seções alternadas |
+| `texto-principal` | `#F2EFE6` | texto principal — quase branco |
 | `texto-secundario` | `#B4AC98` | texto secundário |
+
+**Destaques (obrigatórios nas duas bases):**
+
+| Nome | Hex | Uso |
+|---|---|---|
 | `amarelo-selo` | `#F2C11A` | cor de destaque principal — botões, links, detalhes gráficos |
 | `vermelho-selo` | `#FF5A45` | segunda cor de destaque — usar com moderação, tipo contraponto do amarelo |
 
-Reparem que é uma paleta **escura de propósito**, não é "tema claro invertido". O amarelo entra como cor de assinatura forte (quase uma cor de marca), e o vermelho é usado com parcimônia pra não competir com ele — se as duas cores de destaque aparecerem com o mesmo peso na página, nenhuma das duas se destaca.
+O amarelo entra como cor de assinatura forte (quase uma cor de marca), e o vermelho é usado com parcimônia pra não competir com ele — se as duas cores de destaque aparecerem com o mesmo peso na página, nenhuma das duas se destaca.
 
-> **Atenção especial em fundo escuro:** cor de destaque saturada em tela escura é fácil demais de exagerar. Usem o amarelo em elementos pontuais — botão, borda, ícone, um detalhe gráfico — nunca como fundo de blocos grandes de texto corrido (texto amarelo em bloco longo cansa a leitura em fundo escuro).
+> **Atenção especial se escolherem fundo escuro:** cor de destaque saturada em tela escura é fácil demais de exagerar. Usem o amarelo em elementos pontuais — botão, borda, ícone, um detalhe gráfico — nunca como fundo de blocos grandes de texto corrido (texto amarelo em bloco longo cansa a leitura em fundo escuro). Em fundo claro esse risco é menor, mas vale o mesmo princípio: destaque é pra ser pontual.
 
 #### Tipografia
 
@@ -109,3 +127,8 @@ O cliente pediu pelo menos:
 ## Dica final
 
 Cliente satisfeito é cliente que sente que o site foi feito *pra ele*, não que é um template com a cor trocada.
+
+
+
+
+
